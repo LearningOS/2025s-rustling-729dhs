@@ -70,8 +70,7 @@ mod tests {
     #[test]
     fn classic_c_structs() {
         // TODO: 实例化一个经典的C结构体！
-        let green = ColorClassicStruct
-        {
+        let green = ColorClassicStruct {
             red: 0,
             green: 255,
             blue: 0,
@@ -85,10 +84,7 @@ mod tests {
     #[test]
     fn tuple_structs() {
         // TODO: 实例化一个元组结构体！
-        let green =
-        {
-            ColorTupleStruct(0, 255, 0)
-        };
+        let green = { ColorTupleStruct(0, 255, 0) };
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
